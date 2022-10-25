@@ -1,0 +1,3 @@
+CVMFS_REPOSITORIES=sft.cern.ch,sw.hsf.org,ilc.desy.de
+CVMFS_HTTP_PROXY=DIRECT
+CVMFS_CLIENT_PROFILE=single
