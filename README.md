@@ -3,6 +3,10 @@
 ```bash
 docker run -d --name test --privileged=true ilcsoft/tutorial:v0 /usr/sbin/init
 docker exec -it test /bin/bash
+```
+
+you're inside the container now
+```bash
 sudo cvmfs_config setup
 sudo service autofs restart
 ```
