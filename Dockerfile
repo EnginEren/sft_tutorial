@@ -1,4 +1,4 @@
-FROM cern/cc7-base:latest
+FROM ghcr.io/aidasoft/centos8:latest
 
 RUN yum install -y sudo  \
     && yum install -y https://ecsft.cern.ch/dist/cvmfs/cvmfs-release/cvmfs-release-latest.noarch.rpm \
