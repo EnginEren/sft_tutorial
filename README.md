@@ -28,20 +28,20 @@ source /cvmfs/sw.hsf.org/key4hep/setup.sh
 
 ```bash
 docker run -d --name test --privileged -p 8888:8888 -v $(pwd):/home ilcsoft/tutorial:aidacs8 /usr/sbin/init
+```
+
+Go inside the container 
+```bash
 docker exec -it test /bin/bash
 ```
 
-you're inside the container now
-```bash
-sudo cvmfs_config setup
-```
-Due to the lack of autofs on macOS, we need to mount the individual repositories with a script.
+Setup `cvmfs`. Due to the lack of autofs on macOS, we need to mount the individual repositories with a script.
 
 ```bash
 chmod +x setup_env_mac.sh
 source setup_env_mac.sh
 ```
-make sure you have mounted the /cvmfs repositories. Now source key4hep and launch jupyter-lab
+make sure you have mounted the `cvmfs` repositories. Now source key4hep and launch jupyter-lab
 
 ```bash
 source /cvmfs/ilc.desy.de/key4hep/setup.sh

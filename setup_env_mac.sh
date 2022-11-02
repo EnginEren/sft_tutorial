@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo cvmfs_config setup
+
 sudo mkdir -p /cvmfs/cvmfs-config.cern.ch
 sudo mount -t cvmfs cvmfs-config.cern.ch /cvmfs/cvmfs-config.cern.ch/
 
