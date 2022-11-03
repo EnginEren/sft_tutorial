@@ -38,13 +38,18 @@ docker exec -it test /bin/bash
 Setup `cvmfs`. Due to the lack of autofs on macOS, we need to mount the individual repositories with a script.
 
 ```bash
+cd /home
 chmod +x setup_env_mac.sh
 source setup_env_mac.sh
 ```
-make sure you have mounted the `cvmfs` repositories. Now source key4hep and launch jupyter-lab
+make sure you have mounted the `cvmfs` repositories. Now source key4hep
 
 ```bash
 source /cvmfs/ilc.desy.de/key4hep/setup.sh
+```
+and launch jupyter-lab
+
+```bash
 jupyter lab  --port=8888 --ip=0.0.0.0 --no-browser --allow-root
 ```
 
